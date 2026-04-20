@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato & Reservas — Café Boêmio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <div class="logo-icon">☕</div>
+        <div class="logo-text">CAFÉ <span>BOÊMIO</span></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <span class="eyebrow">Fale com a gente</span>
+    <h1>CONTATO</h1>
+    <p>Reserve sua mesa, tire dúvidas ou mande uma mensagem. Adoramos conversar!</p>
+  </div>
+
+  <section class="secao">
+    <div class="container">
+      <div class="contato-grid">
+
+        <div class="contato-info">
+          <h2>ONDE ESTAMOS</h2>
+
+          <div class="info-item">
+            <div class="icone">📍</div>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua Raul Soares, 1042 — Centro<br>Salinas, MG — CEP 39560-000</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icone">📞</div>
+            <div>
+              <strong>Telefone & WhatsApp</strong>
+              <p>(38) 0000-0000<br></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icone">✉</div>
+            <div>
+              <strong>E-mail</strong>
+              <p><a href="mailto:oi@cafebohemio.com.br">oi@cafebohemio.com.br</a><br>
+              <a href="mailto:reservas@cafebohemio.com.br">reservas@cafebohemio.com.br</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icone">⏰</div>
+            <div>
+              <strong>Horários</strong>
+              <p>
+                Seg – Sex: 7h às 22h<br>
+                Sábado: 8h às 23h30<br>
+                Domingo: 9h às 20h
+              </p>
+            </div>
+          </div>
+
+          <!-- Redes Sociais -->
+          <div style="margin-top:2rem;">
+            <strong style="font-family:var(--fonte-corpo);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--cor-caramelo);display:block;margin-bottom:0.75rem;">
+              Siga-nos nas Redes Sociais
+            </strong>
+            <div class="redes-sociais">
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="Twitter / X">🐦</a>
+            </div>
+          </div>
+
+        <!-- Formulário de contato reserva -->
+        <div class="form-contato">
+          <h3>RESERVE OU ENVIE UMA MENSAGEM</h3>
+
+          <form action="#" method="POST" novalidate>
+
+            <!-- Nome e Sobrenome lado a lado -->
+            <div class="form-linha">
+              <div class="form-grupo">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+              </div>
+              <div class="form-grupo">
+                <label for="sobrenome">Sobrenome *</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required />
+              </div>
+            </div>
+
+            <!-- E-mail e Telefone lado a lado -->
+            <div class="form-linha">
+              <div class="form-grupo">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+              </div>
+              <div class="form-grupo">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(31) 9xxxx-xxxx" />
+              </div>
+            </div>
+
+            <!-- Assunto -->
+            <div class="form-grupo">
+              <label for="assunto">Assunto *</label>
+              <select id="assunto" name="assunto" required>
+                <option value="" disabled selected>Selecione o motivo do contato</option>
+                <option value="reserva">Reserva de mesa</option>
+                <option value="evento">Evento privado / Aniversário</option>
+                <option value="elogio">Elogio ou sugestão</option>
+                <option value="parceria">Parceria comercial</option>
+                <option value="imprensa">Imprensa / Press</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+
+            <!-- Data e número de pessoas -->
+            <div class="form-linha">
+              <div class="form-grupo">
+                <label for="data">Data Desejada</label>
+                <input type="date" id="data" name="data" />
+              </div>
+              <div class="form-grupo">
+                <label for="horario">Horário</label>
+                <input type="time" id="horario" name="horario" min="07:00" max="22:30" />
+              </div>
+            </div>
+
+            <!-- Número de pessoas -->
+            <div class="form-grupo">
+              <label for="pessoas">Número de Pessoas</label>
+              <select id="pessoas" name="pessoas">
+                <option value="">Selecione</option>
+                <option value="1">1 pessoa</option>
+                <option value="2">2 pessoas</option>
+                <option value="3-4">3 a 4 pessoas</option>
+                <option value="5-8">5 a 8 pessoas</option>
+                <option value="9+">9 ou mais pessoas</option>
+              </select>
+            </div>
+
+            <!-- Mensagem -->
+            <div class="form-grupo">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Conte o que você precisa, ou deixe algum pedido especial..." required></textarea>
+            </div>
+
+            <div class="form-grupo">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" id="newsletter" />
+                Quero receber novidades, promoções e eventos por e-mail
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primario btn-form">
+              ☕ Enviar Mensagem
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:0;">
+    <div class="container">
+      <div class="secao-titulo">
+        <span class="eyebrow">Dúvidas Frequentes</span>
+        <h2>PERGUNTAS FREQUENTES</h2>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-body" style="padding:1.5rem;">
+            <h3>Aceitam reservas para grupos grandes?</h3>
+            <p>Sim! Para grupos acima de 10 pessoas, entre em contato com pelo menos 48h de antecedência pelo formulário ou WhatsApp.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="padding:1.5rem;">
+            <h3>Posso levar meu pet?</h3>
+            <p>Adoramos pets! Nossa área externa é totalmente pet-friendly. Mantemos água fresca disponível para os peludos.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="padding:1.5rem;">
+            <h3>Tem Wi-Fi gratuito?</h3>
+            <p>Claro! Temos Wi-Fi de alta velocidade disponível para todos os clientes. A senha está no verso do cardápio.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="padding:1.5rem;">
+            <h3>Vocês têm opções veganas?</h3>
+            <p>Sim! Temos uma seleção crescente de opções veganas e vegetarianas. Pergunte ao barista pelas alternativas disponíveis no dia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>CAFÉ BOÊMIO</h4>
+        <p>Um espaço para quem ama café de verdade,<br>boa música e ótimas conversas.</p>
+        <div class="redes-sociais" style="margin-top:1rem;">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>NAVEGAÇÃO</h4>
+        <ul style="display:flex;flex-direction:column;gap:0.4rem;">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="contato.html">Contato & Reservas</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONTATO</h4>
+        <address>
+          Rua Raul Soares, 1042 — Centro<br>
+          Salinas, MG — 39560-000<br><br>
+          📞 (38) 0000-0000<br>
+          ✉ oi@cafebohemio.com.br
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>HORÁRIOS</h4>
+        <p>
+          Seg – Sex: 7h às 22h<br>
+          Sábado: 8h às 23h<br>
+          Domingo: 9h às 20h
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Café Boêmio. Todos os direitos reservados. Feito com ☕ e muito carinho.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
